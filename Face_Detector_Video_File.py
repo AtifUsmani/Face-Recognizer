@@ -3,7 +3,7 @@ from random import randrange
 
 trained_face_data = cv2.CascadeClassifier('frontal_face_default.xml')
 
-video_file = cv2.VideoCapture('example.mp4')
+video_file = cv2.VideoCapture('example.mp4') #change 'example.mp4' to the name of your video
 
 while True:
     successful_frame_read, frame = video_file.read()
@@ -17,3 +17,4 @@ while True:
     key = cv2.waitKey(1)
     if key==27:
         break
+        #press esc to exit the program

@@ -3,7 +3,7 @@ from random import randrange
 
 trained_face_data = cv2.CascadeClassifier('frontal_face_default.xml')
 
-webcam = cv2.VideoCapture(0)
+webcam = cv2.VideoCapture(0) #If you have multiple webcams , change the number in the brackets.
 
 while True:
     successful_frame_read, frame = webcam.read()
@@ -17,5 +17,6 @@ while True:
     key = cv2.waitKey(1)
     if key==27:
         break
+        #press esc to exit the program
 
 webcam.release()

@@ -3,7 +3,7 @@ from random import randrange
 
 trained_face_data = cv2.CascadeClassifier('frontal_face_default.xml')
 
-img = cv2.imread('Face.jpg')
+img = cv2.imread('Face.jpg') # change 'Face.jpg' to the name of your image
 
 grayscale_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
@@ -15,5 +15,3 @@ for (x, y, w, h) in face_coordinates:
 
 cv2.imshow('Face Detector', img)
 key = cv2.waitKey()
-
-print("Code Completed")
